@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通信行程卡</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        html,body {
+            height: 100%;
+        }
+        .main {
+            max-width: 750px;
+            height: 100%;
+            background:  url('./img/draa_02.png') no-repeat;
+            background-size:100% 100%;
+            /* background-size:contain; */
+            margin: 0 auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        .time {
+            color: #94949d;
+            font-size: 14px;
+            margin: 63% auto 0px;
+            text-align: center;
+        }
+        .arricon {
+            width: 190px;
+            height: 190px;
+            margin:0 auto;
+            animation:mymove 0.8s infinite alternate;
+            -webkit-animation:mymove 0.8s infinite alternate;
+        }
+        @keyframes mymove
+            {
+            from { transform: scale(1);}
+            to {transform: scale(0.9);}
+        }
+        @-webkit-keyframes mymove
+        {
+            from { transform: scale(1);}
+            to {transform: scale(0.9);}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="time">更新于：<span id="date"></span></div>
+        <image class="arricon" src="./img/timg.jpg"></image>
+    </div>
+</body>
+<script>
+    Date.prototype.Format = function (fmt) { // author: meizz
+        var o = {
+            "M+": this.getMonth() + 1, // 月份
+            "d+": this.getDate(), // 日
+            "h+": this.getHours(), // 小时
+            "m+": this.getMinutes(), // 分
+            "s+": this.getSeconds(), // 秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), // 季度
+            "S": this.getMilliseconds() // 毫秒
+        };
+        if (/(y+)/.test(fmt))
+            fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+                return fmt;
+    }
+
+    var time2 = new Date().Format("yyyy-MM-dd hh:mm:ss");
+    document.getElementById('date').innerHTML = time2;
+
+</script>
+</html>
