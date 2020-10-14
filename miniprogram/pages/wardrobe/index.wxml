@@ -1,0 +1,8 @@
+<!--pages/wardrobe/index.wxml-->
+<view class="dr_main">
+  <view  class="item_img" wx:for="{{types}}" wx:key="index" data-label="{{item.label}}" data-length="{{item.length}}" bindtap="_toDetail">
+
+    <i class="iconfont {{item.icon}}"></i>
+    <view class="name">{{item.title}}</view>
+  </view>
+</view>

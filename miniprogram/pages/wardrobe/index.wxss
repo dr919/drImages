@@ -1,0 +1,25 @@
+/* pages/wardrobe/index.wxss */
+
+@import "../../style/guide.wxss";
+.dr_main {
+  display: flex;
+  flex-wrap: wrap;
+  padding:20rpx 30rpx;
+  justify-content: center;
+}
+.item_img {
+  width: 31%;
+  margin: 5rpx;
+  border: 1px solid #ccc;
+  padding:30rpx 0;
+  text-align: center;
+}
+.item_img  .iconfont {
+  font-size: 60rpx;
+}
+.item_img .name {
+  width: 100%;
+  text-align: center;
+  font-size: 26rpx;
+  margin-top: 16rpx;
+}

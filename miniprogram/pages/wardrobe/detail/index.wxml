@@ -1,0 +1,22 @@
+<!--pages/wardrobe/index.wxml-->
+<view class="dr_main" wx:if="{{!isView}}">
+  <block wx:if="{{curLength}}">
+    <image lazy-load class="item_img" wx:for="{{curLength}}" wx:key="index"
+      src="{{'https://dr919.github.io/drImages/image/wardrobe/'+curType+'/type'+index+'.jpg'}}" data-idx="{{index}}"
+      bindtap="_viewImg"></image>
+  </block>
+  <view wx:else class="no_data">暂无数据</view>
+</view>
+<!-- 预览大图 -->
+<swiper class="swiper_con" wx:if="{{isView}}" indicator-dots='true' indicator-color='#4566c5' indicator-active-color='#b8082e' autoplay='false' current="{{viewIdx}}">
+  <block wx:for="{{curLength}}" wx:key="index" >
+    <swiper-item class="swiper_item">
+      
+      <image lazy-load  class="view_img"
+        src="{{'https://dr919.github.io/drImages/image/wardrobe/'+curType+'/type'+index+'.jpg'}}" data-idx="{{index}}"
+        bindtap="_viewImg"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 关闭预览按钮 -->
+<i class="hide_btn" wx:if="{{isView}}" bindtap="_hideImg">x</i>

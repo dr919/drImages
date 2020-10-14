@@ -1,0 +1,30 @@
+/* pages/databaseGuide/databaseGuide.wxss */
+
+@import "../../style/guide.wxss";
+.container {
+  position: relative;
+}
+.container .main {
+  position: absolute;
+ top: 230rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.bgd {
+  font-size: 650rpx;
+  font-weight: bold;
+  color: #daa770;
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+.bgr {
+  font-size: 345rpx;
+  font-weight: bold;
+  color: #daa770;
+  position: absolute;
+  top: 550rpx;
+  right:3%;
+}

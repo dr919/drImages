@@ -1,0 +1,7 @@
+<!--pages/databaseGuide/databaseGuide.wxml-->
+<view class="main">
+  <image class="bgImg" src="{{curbgImg}}"></image>
+  <view class="time">更新于：<span id="date">{{curDate}}</span></view>
+  <image class="arricon" src="{{curTimg}}"></image>
+
+</view>

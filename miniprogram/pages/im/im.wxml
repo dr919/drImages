@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="bgd">D</view>
+  <view class="bgr">R</view>
+  <view class="main">
+    <text></text>
+    <!-- <text>欢迎来到DR个人网站!</text> -->
+    <text></text>
+  </view>
+
+
+  <!-- <view class="uploader">
+    <navigator url="./room/room" open-type="navigate" class="uploader-text">
+      <text>进入聊天室</text>
+    </navigator>
+  </view> -->
+</view>

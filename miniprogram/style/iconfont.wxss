@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 2127250 */
+  src: url('//at.alicdn.com/t/font_2127250_tgbx23fhgn.eot');
+  src: url('//at.alicdn.com/t/font_2127250_tgbx23fhgn.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2127250_tgbx23fhgn.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2127250_tgbx23fhgn.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2127250_tgbx23fhgn.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2127250_tgbx23fhgn.svg#iconfont') format('svg');
+}
+
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shipin:before {
+  content: "\e626";
+}
+
+.icon-waitao:before {
+  content: "\e606";
+}
+
+.icon-kuzi:before {
+  content: "\e615";
+}
+
+.icon-qunzi:before {
+  content: "\e608";
+}
+
+.icon-duanxiu:before {
+  content: "\e607";
+}
+
+.icon-xizhuangwaitao:before {
+  content: "\e614";
+}
+
+.icon-peishi-xianxing:before {
+  content: "\e612";
+}
+
+.icon-peishi:before {
+  content: "\e645";
+}
+
+.icon-baobao:before {
+  content: "\e647";
+}
+
+.icon-ziyuan:before {
+  content: "\e616";
+}
+
+.icon-xiezi:before {
+  content: "\e654";
+}
+
