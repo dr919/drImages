@@ -70,5 +70,3 @@ let types = [
     //   length:1,
     // },
   ]
-
-export default types;
